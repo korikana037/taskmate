@@ -9,7 +9,7 @@
 <div class="container">
 </br>
 
-{% if task_obj.manage==request.user %}
+{% if task_obj.manage == request.user %}
     <form method = 'POST' class='row'>
         {% csrf_token %} 
         <label class='col-lg-4'></label>
